@@ -1,0 +1,25 @@
+Repositories store metadata in a hidden ".git" directory ((use ls -la to see))
+
+Create repostiory ((can do offline))
+
+$cd repository_source_dir
+$ls -a ((see files)
+$git init ((creates new repository, w/o any commits))
+
+$git status ((shows status including most recent commit))
+
+
+create snapshot via a staging area
+
+$git status
+$git add file1
+$git add filen
+
+
+
+==============================================================================
+
+Q: What happens when you initialize a repository? Why do you need to do it?-
+A: metadata ".git" directory created.  need to do it to use repository
+
+*** saved 2015/08/05 12:09
