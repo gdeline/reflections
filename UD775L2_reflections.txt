@@ -15,11 +15,24 @@ $git status
 $git add file1
 $git add filen
 
+$git config --global core.editor "notepad" ((set git editor))
+$git config --global user.email "email@company.com"
+$git config --global user.name "Name"
+
+$git commit
+
+$git commit -m "Commit message" ((commit message))
+// Commit Message Styles: http://udacity.github.io/git-styleguide/
+
+@todo: check email notifications - did not receive email message
 
 
 ==============================================================================
 
 Q: What happens when you initialize a repository? Why do you need to do it?-
 A: metadata ".git" directory created.  need to do it to use repository
+
+Q: How is the staging area different from the working directory and the repository? What value do you think it offers?
+A: intermediate storage - buffer.  value is that you can add in multiple operations and then do a single atomic commit.  less error-prone than having to string together all of the files on one command line
 
 *** saved 2015/08/05 12:09
