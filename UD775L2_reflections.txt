@@ -36,3 +36,4 @@ Q: How is the staging area different from the working directory and the reposito
 A: intermediate storage - buffer.  value is that you can add in multiple operations and then do a single atomic commit.  less error-prone than having to string together all of the files on one command line
 
 *** saved 2015/08/05 12:09
+*** saved 2015/08/05 12:27

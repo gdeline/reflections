@@ -1,4 +1,4 @@
-General: FC in Windows ~ diff in Unix
+General: FC in Windows ~ diff in Unix   ((updated 2015/08/05 12:27 - only for git add))
 =========================================================
 
 Question: How did viewing a diff between two versions of a file help you see the bug that was introduced?
