@@ -27,6 +27,37 @@ $git commit -m "Commit message" ((commit message))
 @todo: check email notifications - did not receive email message
 
 
+$git checkout master
+$git diff ((changes between working directory and staging area - what has been staged for a commit))
+$git diff --staged ((deltas between staging area and repository - what is waiting to be committed))
+$git diff id1 id2 ((deltas between commits))
+
+$git reset --hard ((discards changes in working area and staging area - CANNOT RECOVER))
+
+stopped at 12:49 2015/08/05 at start of Lesson 2 "Commit the Bug Fix" - Leave 'detachec HEAD' state
+
+16:49
+
+branches
+
+- start with master branch
+- "detached head" is when you are not on a branch
+
+create, check out, commit branches
+- 
+
+$git branch ((info))
+$git branch label ((create branch))
+$git checkout label ((checkout branch))
+
+"remote branch" - created by s/o else
+ 
+
+$git log --graph --oneline branch1 branch
+
+$git checkout -b new_branch_name ((create a new branch for "detached HEAD" branch commits))
+
+
 ==============================================================================
 
 Q: What happens when you initialize a repository? Why do you need to do it?-
@@ -35,5 +66,18 @@ A: metadata ".git" directory created.  need to do it to use repository
 Q: How is the staging area different from the working directory and the repository? What value do you think it offers?
 A: intermediate storage - buffer.  value is that you can add in multiple operations and then do a single atomic commit.  less error-prone than having to string together all of the files on one command line
 
+Q: How can you use the staging area to make sure you have one commit per logical change?
+A: multiple adds, then confirm everything is in place in staging, then finally do a single commit
+
+Q: What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+A: feature dev, multiple people working on code base.  clear identification of what's being worked on, ability to merge together
+
+Q: How do the diagrams help you visualize the branch structure?
+A: Show visually where changes have been made, allow better planning for merges.
+
+
+
+
+
 *** saved 2015/08/05 12:09
-*** saved 2015/08/05 12:27
+*** saved 2015/08/05 12:27working
