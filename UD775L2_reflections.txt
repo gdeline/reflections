@@ -57,6 +57,18 @@ $git log --graph --oneline branch1 branch
 
 $git checkout -b new_branch_name ((create a new branch for "detached HEAD" branch commits))
 
+merging branches
+((merge X into Y))
+$git branch Y ((go into the Y branch since that's the one you want to merge into))
+$git merge X Y ((merge X into Y - N.B. if in branch Z then X & Y would be merged into Z))
+
+$git merge --abort ((rollback the merge))
+
+$git branch -d X ((delete branch no longer required))
+
+$git config --global core.autocrlf true ((address Newline issues between Windows & Unix))
+
+$git show commit_id ((show diff between commit and parent))
 
 ==============================================================================
 
@@ -74,6 +86,9 @@ A: feature dev, multiple people working on code base.  clear identification of w
 
 Q: How do the diagrams help you visualize the branch structure?
 A: Show visually where changes have been made, allow better planning for merges.
+
+Q: What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+A: the work done in a secondary branch is subsumed into the primary.  we represent it in the diagram in that manner as one branch ends where it merges into the other.
 
 
 
