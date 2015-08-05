@@ -70,6 +70,18 @@ $git config --global core.autocrlf true ((address Newline issues between Windows
 
 $git show commit_id ((show diff between commit and parent))
 
+conflict detection
+- if a conflict is detected the source file will have <<<<< and >>>>> embedded with branch name
+- edit file manually and change/address the issue
+$git status ((will show file as "both modified" under "unmerged paths"))
+// check in the file
+$git add file
+$git status ((should show that conflicts are resolved but need to run a git commit))
+
+$git log -n # ((only shows # of commits))
+
+
+
 ==============================================================================
 
 Q: What happens when you initialize a repository? Why do you need to do it?-
@@ -90,7 +102,8 @@ A: Show visually where changes have been made, allow better planning for merges.
 Q: What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
 A: the work done in a secondary branch is subsumed into the primary.  we represent it in the diagram in that manner as one branch ends where it merges into the other.
 
-
+Q: What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+A: auto merge (pro, con) : (ease, risk); manual merge (pro, con) : (specific, effort)
 
 
 
