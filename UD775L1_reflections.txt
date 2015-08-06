@@ -1,8 +1,5 @@
-General: FC in Windows ~ diff in Unix   ((updated 2015/08/05 12:27 - only for git add))
-=========================================================
-
-Question: How did viewing a diff between two versions of a file help you see the bug that was introduced?
-Answer: quickly highlighted the changed lines
+Q: How did viewing a diff between two versions of a file help you see the bug that was introduced?
+A: quickly highlighted the changed lines
 
 Q: How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
 A: Can see how things have changed over time, including when others have made mods.
@@ -21,71 +18,3 @@ A: can effectively "undo" them
 
 Q: Now that you have your workspace set up, what do you want to try using Git for?
 A: support future dev work
-
-((GIT can allow offline use))
-
-((Commits - check ins))
-
-$git log --stat ((statistics re. what files have changed in each commit, using '+' and '-', proportional to size of change))
-
-$git diff commit_id commit_id 
-
-Installing GIT: https://www.udacity.com/wiki/ud775/install-git
-
-Download Asteroids
-
-git clone https://github.com/udacity/asteroids.git
-cd asteroids
-((now can use git log and git diff))
-git log ((shows commits)
-((didn't have to do - git config --global color.ui auto))
-
-git diff b0678b161fcf74467ed3a63110557e3d6229cfa6 f19cb1b80fe27e938e4d72770ca0a42f25e99ecc
-
-Git Errors and Warnings Solution
-
-Should not be doing an octopus 
-Octopus is a strategy Git uses to combine many different versions of code together. This message can appear if you try to use this strategy in an inappropriate situation.
-
-You are in 'detached HEAD' state 
-HEAD is what Git calls the commit you are currently on. You can “detach” the HEAD by switching to a previous commit, which we’ll see in the next video. Despite what it sounds like, it’s actually not a bad thing to detach the HEAD. Git just warns you so that you’ll realize you’re doing it.
-
-Panic! (the 'impossible' happened) 
-This is a real error message, but it’s not output by Git. Instead it’s output by GHC, the compiler for a programming language called Haskell. It’s reserved for particularly surprising errors!
-
-Takeaway We hope these errors and warnings amused you as much as they amused us! Now that you know what kind of errors Git can throw, you’re ready to start checking out previous versions of files with Caroline.
-
-Git Checkout
-
-open HTML browser and open the index.html
-
-copy and paste in bash: enabling quick edit mode https://www.udacity.com/wiki/ud775/git-bash-copy-paste
-
-$git checkout b0678b161fcf74467ed3a63110557e3d6229cfa6 ((checks out that commit - now when you do a git log, it only shows older ones))
-
-
-Configuring GIT repository
-- prompt, tab completion, default editor
-((~/.bash_profile))
-@todo look at sublime
-
-Git command review
-
-Compare two commits, printing each line that is present in one commit but not the other.
-
-git diff will do this. It takes two arguments - the two commit ids to compare. 
-
-
-Make a copy of an entire Git repository, including the history, onto your own computer.
-
-git clone will do this. It takes one argument - the url of the repository to copy. 
-
-
-Temporarily reset all files in a directory to their state at the time of a specific commit.
-
-git checkout will do this. It takes one argument - the commit ID to restore. 
-
-
-Show the commits made in this repository, starting with the most recent.
-
-git log will do this. It doesn't take any arguments.
